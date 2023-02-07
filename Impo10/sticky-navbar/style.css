@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+}
+
+.top-container{
+    background-image: url(https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.top-container h1{
+    color: white;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.text{
+    margin: 50px 5%;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+.navbar{
+    display: flex;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.5s;
+    padding: 10px 5%;
+    box-sizing: border-box;
+}
+
+.navbar .logo{
+    text-decoration: none;
+    color: red;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    /* padding-left: 10px; */
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    /* padding-right: 10px; */
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: black;
+    font-family: cursive;
+}
+
+
+.navbar ul li a:hover{
+    color: red;
+}
+
+.navbar.active{
+    background-color: black;
+}
+
+.navbar.active ul li a{
+    color: white;
+}
+

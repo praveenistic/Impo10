@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Practice</h3>
+    <input type="number" id="value" placeholder="enter value here">
+    <button id="btn" onclick="searchfun()">Search</button>
+    <br>
+    <script>
+        let arry = [10, 20, 45, 34, 76];
+        let svalue = document.getElementById("value");
+
+        function searchfun() {
+            for (i = 0; i <= arry.length - 1; i++){
+
+                if (arry[i] == svalue.value) {
+                    console.log(arry[i]);
+                    break;
+                }
+
+                else {
+                    console.log("Value not found");
+                }
+            }
+        };
+
+function sum(a,b){
+    return a+b;
+}
+
+
+let sumA = (a,b) => {
+    return a + b;
+}
+    </script>
+</body>
+
+</html>

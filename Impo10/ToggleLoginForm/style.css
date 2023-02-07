@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', san-serif;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(95, 95, 95, 0.39);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalForm {
+    width: 400px;
+    min-height: 80vh;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.actionBtns {
+    width: 80%;
+    background-color: royalblue;
+    margin: 2em;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 50px;
+    color: white;
+    font-size: 0.8em;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+
+}
+
+.actionBtn {
+    padding: 1em;
+    width: 50%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+
+.moveBtn {
+    position: absolute;
+    /* display: none; */
+    width: 50%;
+    height: 90%;
+    margin: 2px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    background-color: white;
+    font-size: 0.8em;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    transform: translateX(0);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.rightBtn {
+    transform: translateX(98%);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+}
+
+.inputGroup {
+    width: 300px;
+    margin: 0.8em 0;
+    background-color: rgb(245, 245, 245);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    font-weight: 500;
+}
+
+.inputGroup input {
+    width: 100%;
+    padding: 1em 1.5em;
+    background-color: transparent;
+    border-radius: 50px;
+    border: none;
+}
+
+.inputGroup input:focus {
+    outline: none;
+}
+
+.submitBtn {
+    width: 150px;
+    padding: 1em;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 5px;
+    cursor: pointer;
+    font-size: 0.8em;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+
+.submitBtn:hover {
+    background-color: royalblue;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.form {
+    display: none;
+}
+
+.signupForm {
+    display: block;
+}
+
+.loginForm {
+    display: block;
+}
